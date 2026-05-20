@@ -47,7 +47,7 @@ runs:
         cd ../..
       shell: bash
 
-    - name: Install required dependencies and initiate atime magic
+    - name: Install atime@poncatime
       run: |
         cp /github/home/.Rprofile .
         echo "options(repos = c(CRAN = 'https://cloud.r-project.org'))" >> .Rprofile
