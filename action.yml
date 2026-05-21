@@ -41,6 +41,7 @@ runs:
       run: |
         git submodule update --init --recursive
         R CMD INSTALL .
+      shell: bash
 
     - name: Set up system dependencies
       run: |
