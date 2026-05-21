@@ -37,7 +37,7 @@ runs:
     - name: Install R packages (DESCRIPTION-specified deps)
       uses: r-lib/actions/setup-r-dependencies@v2
 
-    - name: install R package
+    - name: install R package (needed for pkg not on CRAN)
       run: |
         git submodule update --init --recursive
         R CMD INSTALL .
