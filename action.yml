@@ -32,8 +32,8 @@ runs:
         git tag
         git fetch --tags
         git tag
-        git switch v1.4
-        git switch master
+        git checkout v1.4
+        git checkout master
       shell: bash
 
     - name: R Setup
