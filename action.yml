@@ -26,6 +26,9 @@ runs:
     - name: Retrieve branch references
       run: |
         cd src/external/ponca
+        git tag
+        git fetch --tags
+        git tag
         git switch v1.4
         git switch master
       shell: bash
